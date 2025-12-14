@@ -1,0 +1,172 @@
+:root {
+  /* Color Palette (Dark Mode Inspired) */
+  --bg-dark: #121212;
+  --card-dark: #1e1e1e;
+  --text-light: #e0e0e0;
+  --text-secondary: #a0a0a0;
+  --primary-math: #007bff; /* Blue */
+  --primary-chem: #ff9900; /* Orange */
+  --primary-phys: #e91e63; /* Pink */
+  --primary-bio: #4caf50; /* Green */
+  --primary-ict: #00bcd4; /* Cyan */
+  --shadow-color: rgba(0, 0, 0, 0.5);
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 40px;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.dashboard-container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+h1 {
+  color: var(--text-light);
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+/* --- Resources Grid --- */
+.subject-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.subject-card {
+  background-color: var(--card-dark);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px var(--shadow-color);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.subject-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.6);
+}
+
+.subject-header {
+  padding: 15px 20px;
+  font-size: 1.4em;
+  font-weight: 600;
+  color: var(--text-light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subject-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.chapter-info {
+  font-size: 0.9em;
+  font-weight: 400;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+/* Subject Specific Styling */
+.math .subject-header {
+  background-color: var(--primary-math);
+}
+.chemistry .subject-header {
+  background-color: var(--primary-chem);
+}
+.physics .subject-header {
+  background-color: var(--primary-phys);
+}
+.biology .subject-header {
+  background-color: var(--primary-bio);
+}
+.ict .subject-header {
+  background-color: var(--primary-ict);
+}
+
+.resource-list {
+  list-style: none;
+  padding: 15px 20px;
+  margin: 0;
+}
+
+.resource-list li {
+  padding: 10px 0;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.08);
+}
+
+.resource-list li:last-child {
+  border-bottom: none;
+}
+
+.topic-number {
+  font-weight: 700;
+  color: var(--text-secondary);
+  margin-right: 10px;
+  font-size: 1.1em;
+  display: inline-block;
+  min-width: 30px;
+}
+
+.links-container {
+  margin-top: 5px;
+  padding-left: 30px;
+}
+
+.links-container a {
+  color: var(--text-light);
+  text-decoration: none;
+  display: block;
+  margin-bottom: 5px;
+  padding: 3px 0;
+  transition: color 0.2s;
+  font-size: 0.95em;
+  word-break: break-all;
+}
+
+.links-container a:hover {
+  color: var(--primary-math);
+  text-decoration: underline;
+}
+
+.chemistry .links-container a:hover {
+  color: var(--primary-chem);
+}
+.physics .links-container a:hover {
+  color: var(--primary-phys);
+}
+.biology .links-container a:hover {
+  color: var(--primary-bio);
+}
+.ict .links-container a:hover {
+  color: var(--primary-ict);
+}
+
+.no-links {
+  color: var(--text-secondary);
+  font-style: italic;
+  padding-left: 30px;
+}
+
+.front-head {
+  font-family: "Press Start 2P";
+  font-size: 55px;
+  color: #e91e63;
+}
+
+.front-link {
+  background-color: #1e1e1e;
+  font-weight: bold;
+  border-radius: 15px;
+}
