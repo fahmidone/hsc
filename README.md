@@ -1,1 +1,1 @@
-# hsc
+# [CLICK](https://fahmid.me/hsc/)
