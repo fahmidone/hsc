@@ -1,14 +1,13 @@
 :root {
-  /* Color Palette (Dark Mode Inspired) */
   --bg-dark: #121212;
   --card-dark: #1e1e1e;
   --text-light: #e0e0e0;
   --text-secondary: #a0a0a0;
-  --primary-math: #007bff; /* Blue */
-  --primary-chem: #ff9900; /* Orange */
-  --primary-phys: #e91e63; /* Pink */
-  --primary-bio: #4caf50; /* Green */
-  --primary-ict: #00bcd4; /* Cyan */
+  --primary-math: #d70040;
+  --primary-chem: #e30b5c;
+  --primary-phys: #ec5800;
+  --primary-bio: #079d68;
+  --primary-ict: #00bcd4;
   --shadow-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -169,4 +168,14 @@ h1 {
   background-color: #1e1e1e;
   font-weight: bold;
   border-radius: 15px;
+}
+
+::-moz-selection {
+  color: #121212;
+  background: #e0e0e0;
+}
+
+::selection {
+  color: #121212;
+  background: #e0e0e0;
 }
